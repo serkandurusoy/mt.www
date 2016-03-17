@@ -1,2 +1,1 @@
-# www
-Mitolojix web site
+Mitolojix Web Site
