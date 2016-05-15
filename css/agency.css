@@ -1,3 +1,9 @@
+/*!
+ * Agency v1.0.7 (http://startbootstrap.com/template-overviews/agency)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -17,6 +23,21 @@ p {
 }
 p.large {
   font-size: 16px;
+}
+.help-block {
+  margin-top: 4px;
+  background-color: #e74c3c;
+  border-radius: 4px;
+}
+.help-block ul {
+  padding-left: 0;
+}
+.help-block li {
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  list-style: none;
+  margin-left: 20px;
+  padding: 6px 0;
+  color: #fff;
 }
 a,
 a:hover,
