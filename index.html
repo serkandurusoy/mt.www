@@ -1,45 +1,553 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='utf-8'>
-  <link rel="canonical" href="http://www.mitolojix.com/" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-  <title>Mitolojix</title>
-  <style>
-    html,body {
-      width : 100%;
-      height : 100%;
-      min-width: 400px;
-      min-height: 400px;
-      overflow : hidden;
-      position : absolute;
-      top : 0;
-      left : 0;
-      right : 0;
-      bottom : 0;
-      margin : 0;
-      padding: 0;
-      border: none;
-      background-color: #111111;
-      box-sizing: border-box;
-    }
+<html lang="tr">
 
-    *, *:before, *:after {
-      box-sizing: inherit;
-    }
-    
-    img {
-      position: fixed;
-      height: 400px;
-      width: 400px;
-      overflow: hidden;
-      top: 50%;
-      left: 50%;
-      margin: -200px 0 0 -200px;
-    }
-  </style>
+<head prefix="og: http://ogp.me/ns#">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Mitolojix</title>
+
+  <meta name="description" content="Mitolojix ile alıştırmalar ve sınavlar öğrenciler için heyecanlı birer yarışmaya dönüşür. Öğretmenler tüm derslerin testlerini Mitolojix ile bilgisayar ve tablette uygular.">
+  <meta name="author" content="Serkan Durusoy - http://www.dna-tr.com">
+
+  <link rel="canonical" href="http://www.mitolojix.com/">
+
+  <meta content='Mitolojix' property='og:title'>
+  <meta content='Mitolojix ile alıştırmalar ve sınavlar öğrenciler için heyecanlı birer yarışmaya dönüşür. Öğretmenler tüm derslerin testlerini Mitolojix ile bilgisayar ve tablette uygular.' property='og:description'>
+  <meta content='http://www.mitolojix.com/' property='og:url'>
+  <meta content='Mitolojix' property='og:site_name'>
+  <meta content='http://www.mitolojix.com/img/_main.jpg' property='og:image'>
+  <meta content='tr_TR' property='og:locale'>
+  <meta content="website" property="og:type">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="img/branding/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/branding/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/branding/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/branding/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/branding/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/branding/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/branding/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/branding/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/branding/apple-touch-icon-180x180.png">
+  <link rel="shortcut icon" type="image/x-icon" href="img/branding/favicon.ico">
+  <link rel="icon" type="image/png" href="img/branding/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="img/branding/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="img/branding/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="img/branding/favicon-32x32.png" sizes="32x32">
+  <link rel="manifest" href="img/branding/manifest.json">
+  <meta name="apple-mobile-web-app-title" content="Mitolojix">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="msapplication-tap-highlight" content="no"/>
+  <meta name="application-name" content="Mitolojix">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="img/branding/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/agency.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
 </head>
-<body">
-  <img src="altyazi-400.png" alt="" title=""/>
+
+<body id="page-top" class="index">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Ana Menü</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" alt="Mitolojix"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"><a href="#page-top"></a></li>
+        <li><a class="page-scroll" href="#ozellikler">Özellikler</a></li>
+        <li><a class="page-scroll" href="#kullanim">Kullanım</a></li>
+        <li><a class="page-scroll" href="#hizmetler">Hizmetler</a></li>
+        <li><a class="page-scroll" href="#ekip">Ekip</a></li>
+        <li><a class="page-scroll" href="#iletisim">İletişim</a></li>
+        <li><a href="img/mitolojix-brosur.pdf" target="_blank">Broşür</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-lead-in"><span class="back-stripe">Sınav Uygulamalarında Yeni Dönem!</span></div>
+      <div class="intro-heading"><span class="back-stripe">Öğretici ve Eğlenceli</span></div>
+      <a href="#ozellikler" class="page-scroll">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x scroller"></i>
+          <i class="fa fa-arrow-down fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section id="ozellikler">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Özellikler</h2>
+        <h3 class="section-subheading text-muted">Sayısı kullanıcı ihtiyaç ve talepleri doğrultusunda her geçen gün artan yüzelerce özellik.</h3>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Soru Tipleri</h4>
+        <p class="text-muted">Sınav uygulamalarında bir ilk olan sıralama, eşleştirme ile birlikte 6 değişik soru tipi içerir.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-check-circle-o fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Sınav Tipleri</h4>
+        <p class="text-muted">Evde ve sınıfta uygulanabilecek, öğrenim ve ölçme amaçlı dört farklı sınav tipi.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Detaylı Müfredat</h4>
+        <p class="text-muted">Konu ve kazanımlarına göre ayrıştırılmış detaylı müfredat tanımları ve içerikler kaydedilebilir.</p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-comments fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">İşbirliği Araçları</h4>
+        <p class="text-muted">Öğretmenler soru ve sınavlar üzerinde birlikte çalışabilir ve idareciler süreçleri izleyebilir.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-bar-chart fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Ayrıntılı Raporlar</h4>
+        <p class="text-muted">Öğrenci, sınıf, sınav ve soru performanslarını değerlendiren detaylı raporlar içerir.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Kullanıcı Dostu</h4>
+        <p class="text-muted">Hem eğitimciler hem de öğrenciler için son derece kolay ve eğlenceli bir kullanım deneyimi sunar.</p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Mobil Tam Uyumlu</h4>
+        <p class="text-muted">Hem öğretmen hem de öğrenci oyun arayüzleri hem bilgisayar hem tablet cihazlar ile tam uyumludur.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-refresh fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Canlı Sistem</h4>
+        <p class="text-muted">Tüm işlemler sayfa ve ekran yenilemeye gerek kalmadan anında bağlı tüm kullanıcılara yansır.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Güvenli Altyapı</h4>
+        <p class="text-muted">Tüm öğrenci, soru ve sınav bilgileri güvenli sunucularda ve erişimi SSL şifreleme altındadır.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kullanim" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Kullanım</h2>
+        <h3 class="section-subheading text-muted">Mitolojix, daha açar açmaz nasıl kullanacağınızı sezgisel olarak keşfedebildiğiniz, kullanıcı dostu bir yapıda tasarlandı.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 portfolio-item">
+        <a href="#sorular-girin" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/1.jpg" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Sorular Girin</h4>
+          <p class="text-muted">Mitolojix'e istediğiniz ders için kendi hazırladığınız soruları girin</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 portfolio-item">
+        <a href="#sinav-olusturun" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/2.jpg" class="img-responsive"
+               alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Sınav Oluşturun</h4>
+          <p class="text-muted">Sorularınızla, internet üzerinde bir sınav oluşturun</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 portfolio-item">
+        <a href="#ogrenciler-katilsin" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/3.jpg" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Öğrenciler Katılsın</h4>
+          <p class="text-muted">Öğrenciler sınavı tamamlayarak mühürler ve rütbeler kazansınlar</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 portfolio-item">
+        <a href="#olcumleyin" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/4.jpg" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Ölçümleyin</h4>
+          <p class="text-muted">Sınav sonuçlarının detaylı analiz raporlarını alın</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hizmetler">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Hizmetler</h2>
+        <h3 class="section-subheading text-muted">İnceleme ve karar aşamasından, günlük kullanıma, eğitim dönemi başlangıcından yıl sonuna dek Mitolojix ekibi her an desteğe hazır durumdadır.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <img class="img-circle img-responsive" src="img/mitolojix-logo.jpg">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>2009-2011</h4>
+                <h4 class="subheading">Our Very Humble Beginnings</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur consectetur!</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img class="img-circle img-responsive" src="img/mitolojix-logo.jpg" >
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>March 2011</h4>
+                <h4 class="subheading">An Agency is Born</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur consectetur!</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img class="img-circle img-responsive" src="img/mitolojix-logo.jpg" >
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>December 2012</h4>
+                <h4 class="subheading">Transition to Full Service</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur consectetur!</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img class="img-circle img-responsive" src="img/mitolojix-logo.jpg" >
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>July 2014</h4>
+                <h4 class="subheading">Phase Two Expansion</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur consectetur!</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>Başka
+                <br>bir
+                <br>arzunuz?</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ekip" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Ekip</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet
+                                                  consectetur.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="team-member">
+          <img src="img/mitolojix-logo.jpg" class="img-responsive img-circle" alt="">
+          <h4>Kay Garland</h4>
+          <p class="text-muted">Lead Designer</p>
+          <ul class="list-inline social-buttons">
+            <li><a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="team-member">
+          <img src="img/mitolojix-logo.jpg" class="img-responsive img-circle" alt="">
+          <h4>Larry Parker</h4>
+          <p class="text-muted">Lead Marketer</p>
+          <ul class="list-inline social-buttons">
+            <li><a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur
+                                    totam corporis ea, alias ut unde.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="iletisim">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">İletişim</h2>
+        <h3 class="section-subheading text-muted">Bu formu doldurmanızın ardından sizle en kısa sürede iletişime geçeceğiz.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="İsim *" id="name" required data-validation-required-message="Lütfen isminizi girin.">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="E-posta *" id="email" required data-validation-required-message="Lütfen geçerli bir e-posta adresi girin.">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" placeholder="Telefon *" id="phone" required data-validation-required-message="Lütfen telefon numaranızı girin.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Mesajınız *" id="message" required data-validation-required-message="Lütfen mesajınızın içeriğini yazın."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12 text-center">
+              <div id="success"></div>
+              <button type="submit" class="btn btn-xl">İlet</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <span class="copyright">&copy; 2015-2016 <a href="http://www.ulmanws.com/" title="Ulman Web Solutions">Ulman Web Solutions</a> - Mitolojix</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="portfolio-modal modal fade" id="sorular-girin" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/1.jpg" alt="">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              <i class="fa fa-times"></i> Kapat
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="sinav-olusturun" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/2.jpg" alt="">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              <i class="fa fa-times"></i> Kapat
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="ogrenciler-katilsin" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/3.jpg" alt="">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              <i class="fa fa-times"></i> Kapat
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="olcumleyin" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/4.jpg" alt="">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              <i class="fa fa-times"></i> Kapat
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+<script src="js/agency.js"></script>
+
 </body>
+
+</html>
